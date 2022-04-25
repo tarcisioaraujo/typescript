@@ -2,5 +2,6 @@
     "compileOnSave": false,
     "compilerOptions": {
         "outDir": "dist",
+        "noEmitOnError": true,
     }
 }
