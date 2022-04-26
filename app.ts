@@ -12,8 +12,13 @@ function getIdade(idade):string {
     return idade + " anos";
 }
 
-getPerfil("231", 32, "teste@gmail.com");
+// getPerfil("231", 32, "teste@gmail.com");
 
-let idadeAnos:string = getIdade(42);
+// let idadeAnos:string = getIdade(42);
+
+let retornaPerfil = (nome:string, idade:number, email:string):void => {
+    nome = nome.toUpperCase();
+    console.log(nome, idade, email);
+}
 
 console.log(texto, idade);
