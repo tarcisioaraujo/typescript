@@ -1,25 +1,30 @@
-let linguagem:string = 'Typescript';
-let texto:string = `Olá ${ linguagem }`;
-let idade:number = 20;
+let nome:string = "Ana";
+let idade:number = 19;
+let eMaior:boolean;
 
-linguagem = '60';
-
-let getPerfil = function(nome:string,idade:number,email:string):void{
-  console.log(nome,idade,email);
-};
-
-function getIdade(idade):string{
-  return idade + " anos";
+if(idade > 17){
+  eMaior = true;
+}else{
+  eMaior = false;
 }
 
-//let retornaPerfil = (nome:string,idade:number,email:string):void => console.log(nome,idade,email);
+let lista:string[] = ["verde","azul"];
+let listaNumeros:Array<number> = [76,74,37];
 
-let retornaPerfil = (nome:string,idade:number,email:string):void => {
-  nome = nome.toUpperCase();
-  console.log(nome,idade,email);
-};
+enum Cor {vermelho=2,azul,laranja};
 
-//getPerfil(543,54,"gui@mail.com");
-//let idadeAnos:number = getIdade(45);
+let c:Cor = Cor.azul;
 
-console.log(texto,idade);
+console.log(c);
+console.log(Cor[4]);
+
+let aux:any;
+aux = "teste";
+aux = 43;
+aux = [43,34];
+
+let arrayAny:any[] = [43,"teste",{}];
+
+function listaNomes(lista:string[]):void{
+  console.log(lista);
+}
