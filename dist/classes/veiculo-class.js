@@ -1,7 +1,6 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Veiculo = void 0;
-var Veiculo = /** @class */ (function () {
+exports.__esModule = true;
+var Veiculo = (function () {
     function Veiculo(titulo, rodas) {
         if (titulo === void 0) { titulo = "Nome Carro"; }
         if (rodas === void 0) { rodas = 2; }
